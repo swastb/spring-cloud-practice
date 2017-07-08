@@ -7,10 +7,15 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import org.springframework.stereotype.Service;
+
 import com.poc.hateoaspoc.model.Address;
 import com.poc.hateoaspoc.model.Address.AddressBuilder;
 import com.poc.hateoaspoc.model.Customer;
 
+//@Service("CustomerInfoService")
+
+@Service
 public class CustomerInfoServiceImpl implements CustomerInfoService {
 
 	static Map<String, Customer> customerMap = null;
